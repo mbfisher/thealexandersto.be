@@ -1,0 +1,101 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo|Poiret+One|Quicksand:400,700|Lobster);
+
+/*
+blue a2d7d8
+green bfe1bf
+gray ededea
+yellow fcd059
+red de5842
+*/
+
+h1 {
+    font-family: 'Arvo', serif;
+    font-size: 48px;
+}
+
+input[type=text] {
+    font-family: 'Arvo', serif;
+    font-size: 18px;
+}
+
+.text-blue {
+    color: #a2d7d8;
+}
+.text-green {
+    color: #bfe1bf;
+}
+.text-yellow {
+    color: #fcd059;
+}
+.text-red {
+    color: #de5842;
+}
+
+.text-blue--hover:hover {
+    color: #a2d7d8;
+}
+.text-green--hover:hover {
+    color: #bfe1bf;
+}
+.text-yellow--hover:hover {
+    color: #fcd059;
+}
+.text-red--hover:hover {
+    color: #de5842;
+}
+
+.text-blue--active.active {
+    color: #a2d7d8;
+}
+.text-green--active.active {
+    color: #bfe1bf;
+}
+.text-yellow--active.active {
+    color: #fcd059;
+}
+.text-red--active.active {
+    color: #de5842;
+}
+
+body {
+    background: #f9f9f9;
+}
+
+nav {
+    width: 100%;
+}
+
+nav a {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 20%;
+    text-align: center;
+    border-bottom: 1px solid #e4e4e4;
+    color: rgb(201, 201, 201);
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+    padding: 24px 0;
+}
+
+nav a.active {
+    color: rgb(136, 136, 136);
+}
+
+nav a:hover {
+    color: rgb(136, 136, 136);
+}
+
+.login form {
+    margin-top: 48px;
+}
+
+.greeting {
+    text-align: right;
+}
+.greeting p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 48px;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
