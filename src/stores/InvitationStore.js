@@ -1,6 +1,7 @@
 'use strict';
 
 import {createStore} from 'fluxible/addons';
+const debug = require('debug')('app:store:invitation');
 
 export default createStore({
     storeName: 'InvitationStore',
@@ -13,6 +14,7 @@ export default createStore({
     },
 
     receiveInvitation: function (invitation) {
+        debug('Received invitation', invitation);
         this.username = invitation.username;
 
         this.emitChange();
@@ -20,5 +22,15 @@ export default createStore({
 
     getUsername: function () {
         return this.username;
+    },
+
+    dehydrate: function () {
+        return {
+            username: this.getUsername()
+        };
+    },
+
+    rehydrate: function (state) {
+        this.username = state.username;
     }
 });

@@ -1,8 +1,9 @@
 'use strict';
 
 import React from 'react';
-import {provideContext} from 'fluxible/addons';
-import login from '../actions/login';
+import {connectToStores} from 'fluxible/addons';
+import loginAction from '../actions/login';
+import ErrorStore from '../stores/ErrorStore';
 
 class Login extends React.Component {
     constructor(props) {
@@ -14,7 +15,7 @@ class Login extends React.Component {
     onSubmit(event) {
         event.preventDefault();
 
-        this.context.executeAction(login, {
+        this.context.executeAction(loginAction, {
             username: this.refs.username.getDOMNode().value
         });
     }
@@ -41,13 +42,19 @@ class Login extends React.Component {
                         </div>
                     </div>
                 </form>
+                {this.props.error}
             </div>
         );
     }
 }
 
 Login.contextTypes = {
+    getStore: React.PropTypes.func.isRequired,
     executeAction: React.PropTypes.func.isRequired
 };
 
-export default Login;
+export default connectToStores(Login, [ErrorStore], (stores, props) => {
+    return {
+        error: stores.ErrorStore.getMessage()
+    };
+});
