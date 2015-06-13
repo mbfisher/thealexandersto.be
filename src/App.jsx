@@ -12,6 +12,7 @@ import OtherInfo from './components/pages/OtherInfo';
 
 import InvitationStore from './stores/InvitationStore';
 import ErrorStore from './stores/ErrorStore';
+import LoadingStore from './stores/LoadingStore';
 
 import CookieDough from 'cookie-dough';
 import InvitationService from './services/Invitations';
@@ -58,6 +59,7 @@ app.plug({
 });
 
 app.registerStore(InvitationStore);
+app.registerStore(LoadingStore);
 app.registerStore(ErrorStore);
 
 module.exports = app;

@@ -2,7 +2,8 @@
 
 export default function errorAction(context, payload, done) {
     context.dispatch('RECEIVE_ERROR', {
-        message: payload.message
+        message: payload.message,
+        isLogin: payload.isLogin
     });
     done();
 }
