@@ -2,6 +2,7 @@
 
 import React from 'react';
 import {Link} from 'react-router'
+import classnames from 'classnames';
 
 export default class Navigation extends React.Component {
     constructor (props) {
@@ -45,7 +46,10 @@ export default class Navigation extends React.Component {
             </div>
         );
 
-        let stackItems = this.state.showStack ? items : null;
+        const stackClass = classnames({
+            'nav--stack': true,
+            'nav--stack--show': this.state.showStack
+        });
 
         return (
             <nav>
@@ -59,13 +63,13 @@ export default class Navigation extends React.Component {
                 <div className="nav--groups">
                     {items}
                 </div>
-                <div className="nav--stack">
+                <div className={stackClass}>
                     <div className="nav__toggle row">
                         <div className="twelve columns">
                             <a onClick={this.toggle}>{this.state.showStack ? 'Hide' : 'Menu'}</a>
                         </div>
                     </div>
-                    {stackItems}
+                    {items}
                 </div>
             </nav>
         );

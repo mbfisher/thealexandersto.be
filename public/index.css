@@ -17,6 +17,12 @@ h1 {
     font-size: 48px;
 }
 
+h1.page-title {
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+}
+
 input[type=text] {
     font-family: 'Arvo', serif;
     font-size: 18px;
@@ -86,10 +92,6 @@ nav a {
     border-bottom: 1px solid #e4e4e4;
 }
 
-.nav--stack, .nav--groups {
-    display: none;
-}
-
 .nav--groups .row, .nav--stack a {
     border-bottom: 1px solid #e4e4e4;
 }
@@ -103,7 +105,19 @@ nav a {
     cursor: pointer;
 }
 
-.nav__toggle a.active
+.nav--stack, .nav--groups {
+    display: none;
+}
+
+.nav--stack .nav__items {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+
+.nav--stack--show .nav__items {
+    max-height: 200px;
+}
 
 @media (max-width: 900px) {
     .nav--groups {
