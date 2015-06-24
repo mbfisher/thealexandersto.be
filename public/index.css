@@ -17,6 +17,12 @@ h1 {
     font-size: 48px;
 }
 
+@media (max-width: 400px) {
+    h1 {
+        font-size: 36px;
+    }
+}
+
 h1.page-title {
     width: 100%;
     padding: 12px 0;
@@ -150,8 +156,22 @@ nav a:hover {
     margin-top: 24px;
 }
 
+.intro {
+    text-align: center;
+    margin-top: 48px;
+}
+
+.intro__title h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+}
+
+.intro__date {
+    font-family: 'Quicksand', sans-serif;
+}
+
 .greeting {
-    text-align: right;
+    text-align: center;
 }
 .greeting {
     font-family: 'Quicksand', sans-serif;

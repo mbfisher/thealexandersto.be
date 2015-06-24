@@ -4,7 +4,7 @@
   "description": "Alexander Wedding",
   "main": "index.js",
   "scripts": {
-    "start": "[ \"$NODE_ENV\" = \"production\" ] && webpack; babel-node server.js"
+    "start": "[ \"$NODE_ENV\" = \"production\" ] && webpack; node index.js"
   },
   "dependencies": {
     "babel": "^5.5.8",
