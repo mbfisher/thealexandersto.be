@@ -15,11 +15,15 @@ export default function updateInvitation(context, payload, done) {
     timeout = setTimeout(function () {
         const invitation = context.getStore(InvitationStore).getInvitation();
 
-        context.dispatch('PUSH_START', {invitation: invitation, timestamp: momemnt()});
+        context.dispatch('PUSH_START', {invitation: invitation, timestamp: moment()});
 
-        context.invitations.update(invitation, (err, done) => {
+        context.invitations.update(invitation, (err, response) => {
             if (err) {
                 return context.dispatch('PUSH_ERROR', {invitation: invitation, error: err});
+            }
+
+            if (!response.ok) {
+                return context.dispatch('PUSH_ERROR', {invitation: invitation, error: new Error(response)});
             }
 
             context.dispatch('PUSH_DONE', {invitation: invitation, timestamp: moment()});

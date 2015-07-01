@@ -7,10 +7,7 @@ const debug = require('debug')('app:store:invitation');
 export default createStore({
     storeName: 'InvitationStore',
     handlers: {
-        RECEIVE_INVITATION: 'receiveInvitation',
-        PUSH_START: 'onPushStart',
-        PUSH_ERROR: 'onPushError',
-        PUSH_DONE: 'onPushDone'
+        RECEIVE_INVITATION: 'receiveInvitation'
     },
 
     initialize: function () {
