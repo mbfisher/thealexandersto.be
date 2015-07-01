@@ -2,20 +2,20 @@
 
 import React from 'react';
 import {provideContext, connectToStores} from 'fluxible/addons';
-import {RouteHandler} from 'react-router'
 import Nav from './Nav'
 import Login from './Login';
+import MyInvitation from './pages/MyInvitation';
+import Venue from './pages/Venue';
+import Accommodation from './pages/Accommodation';
+import Gifts from './pages/Gifts';
+import PS from './pages/PS';
+import Push from './Push';
 
 import InvitationStore from '../stores/InvitationStore';
 
-class Application extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            isLoggedIn: false
-        };
-    }
+const debug = require('debug')('app:component:application');
 
+class Application extends React.Component {
     render() {
         var content;
 
@@ -25,7 +25,14 @@ class Application extends React.Component {
             content = (
                 <div>
                     <Nav/>
-                    <RouteHandler/>
+                    <div className="content">
+                        <div id="invitation"><MyInvitation invitation={this.props.invitation}/></div>
+                        <div id="venue"><Venue invitation={this.props.invitation}/></div>
+                        <div id="accommodation"><Accommodation invitation={this.props.invitation}/></div>
+                        <div id="gifts"><Gifts invitation={this.props.invitation}/></div>
+                        <div id="ps"><PS invitation={this.props.invitation}/></div>
+                    </div>
+                    <Push/>
                 </div>
             );
         }
@@ -40,6 +47,7 @@ Application.propTypes = {
 
 export default provideContext(connectToStores(Application, [InvitationStore], (stores) => {
     return {
-        isLoggedIn: !!stores.InvitationStore.getUsername()
+        isLoggedIn: !!stores.InvitationStore.getUsername(),
+        invitation: stores.InvitationStore.getInvitation()
     };
 }));

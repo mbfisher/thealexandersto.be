@@ -4,6 +4,41 @@ import React from 'react';
 
 export default class Gifts extends React.Component {
     render() {
-        return <h1 className="text-yellow page-title">Gifts</h1>;
+        return (
+            <div className="page page--gifts">
+                <h1 className="page__title">Gifts</h1>
+                <div className="container"><div className="row"><div className="twelve columns">
+                    <p className="poem">
+                        If you're thinking of giving us a gift,<br/>
+                        to help us on our way,<br/>
+                        a gift of cash towards our honeymoon,<br/>
+                        would really make our day.
+                    </p>
+
+                    <p className="poem">
+                        Then while we're relaxing on the beach,<br/>
+                        or by the pool so blue,<br/>
+                        we'll sit back and know that,<br/>
+                        it is truly thanks to you!
+                    </p>
+
+                    <p>We have booked our flights to Thailand where we will spend three weeks at Christmas and New Year
+                    2015 traveling around the Surat Thani islands, in the South of the country. To give you an idea of
+                    what your kind contribution would fund, we have listed some of our hopes and wishes below.</p>
+
+                    <p><ul>
+                        <li>&pound;25 would pay for a night at The Great Escape Chalets on Koh Phangan</li>
+                        <li>&pound;40 would pay for a 3 course dinner and drinks on the Khao San Road in Bangkok</li>
+                        <li>&pound;45 would pay for us to relax in the Birmingham Airport lounge before the flight</li>
+                        <li>&pound;55 would pay for an island, snorkelling and day tour</li>
+                        <li>&pound;70 would pay for a night at the Blue Hill Beach Resort on Koh Phangan</li>
+                        <li>&pound;100 would pay for our internal flights to the islands</li>
+                    </ul></p>
+
+                    <p>If you are feeling particularly generous and wish to contribute more, we would very
+                    grateful <strong>&hellip;SOMETHING&hellip;</strong></p>
+                </div></div></div>
+            </div>
+        );
     }
 }

@@ -1,0 +1,286 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway|Poiret+One|Quicksand:400,700|Lobster);
+
+$blue: #a2d7d8;
+$green: #bfe1bf;
+$yellow: #fcd059;
+$red: #de5842;
+$gray: #f9f9f9;
+
+/*
+blue a2d7d8
+green bfe1bf
+gray ededea
+yellow fcd059
+red de5842
+*/
+
+@mixin font-serif {
+  font-family: 'Raleway', serif;
+}
+
+@mixin font-sans {
+  font-family: 'Quicksand', sans-serif;
+}
+
+@mixin font-cursive {
+  font-family: 'Lobster', cursive;
+}
+
+body {
+  margin: 0;
+  background: $gray;
+}
+
+h1 {
+  @include font-cursive();
+  font-size: 48px;
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+h2 {
+  @include font-sans();
+  text-align: center;
+  color: #444;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+}
+
+p, h3, h4, h5, li {
+  color: #666;
+  @include font-serif();
+}
+
+a {
+  color: $red;
+  &:hover {
+    color: $yellow;
+  }
+}
+
+ul {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+form {
+  margin-bottom: 0;
+}
+
+label {
+  color: #555;
+  @include font-serif();
+}
+
+input[type=text] {
+  @include font-serif();
+  font-size: 18px;
+}
+
+.text-blue, .text-blue--hover:hover, .text-blue--active:active {
+  color: $blue;
+}
+.text-green, .text-green--hover:hover, .text-green--active:active {
+  color: $green;
+}
+.text-yellow, .text-yellow--hover:hover, .text-yellow--active:active {
+  color: $yellow;
+}
+.text-red, .text-red--hover:hover, .text-red--active:active {
+  color: $red;
+}
+
+.text--center {
+  text-align: center;
+}
+
+nav {
+  background: #f9f9f9;
+  z-index: 99;
+}
+
+nav a {
+  text-align: center;
+  color: rgb(201, 201, 201);
+  text-decoration: none;
+  @include font-cursive();
+  font-size: 24px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.nav--full {
+  width: 100%;
+}
+
+.nav--full a {
+  width: 20%;
+  padding: 24px 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.nav--groups .row, .nav--stack a {
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.nav--groups a {
+  padding: 2px 0;
+  border-right: 1px solid #e4e4e4;
+}
+
+.nav__toggle a {
+  cursor: pointer;
+}
+
+.nav--stack, .nav--groups {
+  display: none;
+}
+
+.nav--stack .nav__items {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+
+.nav--stack--show .nav__items {
+  max-height: 200px;
+}
+
+@media (max-width: 900px) {
+  .nav--groups {
+    display: block;
+  }
+  .nav--full {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .nav--groups {
+    display: none;
+  }
+
+  .nav--stack {
+    display: block;
+  }
+}
+
+nav a.active {
+  color: rgb(136, 136, 136);
+}
+
+nav a:hover {
+  color: rgb(136, 136, 136);
+}
+
+.login form {
+  margin-top: 24px;
+}
+
+.intro {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.intro__title h1 {
+  @include font-cursive();
+  font-size: 60px;
+}
+
+.intro__date {
+  @include font-sans();
+}
+
+.invitation__greeting {
+  text-align: center;
+  @include font-sans();
+  font-size: 42px;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  margin-bottom: 24px;;
+}
+
+input.error {
+  border-color: #de5842;
+  background: rgb(255, 225, 230);
+  transition: all 0.1s linear;
+}
+
+input.error:focus {
+  border-color: #de5842;
+}
+
+
+@media (max-width: 550px) {
+  .invitation__greeting {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 400px) {
+  .invitation__greeting {
+    font-size: 33px;
+  }
+}
+
+.page {
+  margin-top: 48px;
+}
+
+.page .page__title {
+  width: 100%;
+  padding: 128px 0;
+  text-align: center;
+  color: $gray;
+}
+
+.page--venue .page__title {
+  background: $blue;
+}
+
+.page--accommodation .page__title {
+  background: $green;
+}
+
+.page--gifts .page__title {
+  background: $yellow;
+}
+
+.page--ps .page__title {
+  background: $red;
+}
+
+.dodford-layout img {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .dodford-layout {
+    display: none;
+  }
+}
+
+
+.invitation__rsvp ul {
+  list-style: none;
+}
+
+.poem {
+  @include font-sans();
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
+}

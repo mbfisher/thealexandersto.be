@@ -11,13 +11,18 @@ export default class InvitationService {
         this._collection = collection;
     }
 
-    buildRequest() {
-        let url = this._uri+'/databases/'+this._database+'/collections/'+this._collection;
-        return request.get(url).accept('json').query({apiKey: this._apiKey});
+    static create() {
+        return new InvitationService(
+            'https://api.mongolab.com/api/1',
+            'N0l-xslNc1S0J9aN4LFSLrL9h-Z0blV_',
+            'heroku_nvq1vjmd',
+            'invitations'
+        );
     }
 
     findOne(query, done) {
-        this.buildRequest().query({q: JSON.stringify(query), fo: true}).end((err, res) => {
+        let url = this._uri+'/databases/'+this._database+'/collections/'+this._collection;
+        request.get(url).accept('json').query({apiKey: this._apiKey, q: JSON.stringify(query), fo: true}).end((err, res) => {
             if (err) {
                 debug(err);
                 return done(err);
@@ -26,4 +31,17 @@ export default class InvitationService {
             done(null, res.body);
         });
     }
+
+    create(invitation, done) {
+        let url = this._uri+'/databases/'+this._database+'/collections/'+this._collection;
+        request.post(url).accept('json').query({apiKey: this._apiKey}).send(invitation).end(done);
+    }
+
+    update(invitation, done) {
+        debug('Updating invitation', invitation);
+        return;
+        let url = this._uri+'/databases/'+this._database+'/collections/'+this._collection;
+        request.put(url).accept('json').query({apiKey: this._apiKey}).send(invitation).end(done);
+    }
+
 }

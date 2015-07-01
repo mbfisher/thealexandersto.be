@@ -4,7 +4,6 @@ import express from 'express';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 import React from 'react';
-import Router from 'react-router';
 import FluxibleComponent from 'fluxible/addons/FluxibleComponent';
 import HtmlComponent from './src/components/Html';
 import serialize from 'serialize-javascript';
@@ -43,22 +42,20 @@ server.use((req, res, next) => {
     });
 
     context.executeAction(authAction, null, () => {
-        Router.run(app.getComponent(), req.path, (Root, route) => {
-            let state = serialize(app.dehydrate(context));
+        let state = serialize(app.dehydrate(context));
 
-            let markup = React.renderToString(
-                React.createElement(
-                    FluxibleComponent,
-                    {context: context.getComponentContext()},
-                    React.createElement(Root)
-                )
-            );
-            let html = React.renderToStaticMarkup(
-                React.createElement(HtmlComponent, {markup: markup, state: state})
-            );
+        let markup = React.renderToString(
+            React.createElement(
+                FluxibleComponent,
+                {context: context.getComponentContext()},
+                context.createElement()
+            )
+        );
+        let html = React.renderToStaticMarkup(
+            React.createElement(HtmlComponent, {markup: markup, state: state})
+        );
 
-            res.send(html);
-        });
+        res.send(html);
     });
 });
 
