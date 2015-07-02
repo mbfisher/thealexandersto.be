@@ -27,12 +27,12 @@ export default class Gifts extends React.Component {
                     what your kind contribution would fund, we have listed some of our hopes and wishes below.</p>
 
                     <p><ul>
-                        <li>&pound;25 would pay for a night at The Great Escape Chalets on Koh Phangan</li>
-                        <li>&pound;40 would pay for a 3 course dinner and drinks on the Khao San Road in Bangkok</li>
-                        <li>&pound;45 would pay for us to relax in the Birmingham Airport lounge before the flight</li>
-                        <li>&pound;55 would pay for an island, snorkelling and day tour</li>
-                        <li>&pound;70 would pay for a night at the Blue Hill Beach Resort on Koh Phangan</li>
-                        <li>&pound;100 would pay for our internal flights to the islands</li>
+                        <li><strong>&pound;25</strong> would pay for a night at <i>The Great Escape Chalets</i> on Koh Phangan</li>
+                        <li><strong>&pound;40</strong> would pay for a <i>3 course dinner and drinks</i> on the Khao San Road in Bangkok</li>
+                        <li><strong>&pound;45</strong> would pay for us to relax in the Birmingham Airport <i>lounge before the flight</i></li>
+                        <li><strong>&pound;55</strong> would pay for an island <i>snorkelling and day tour</i></li>
+                        <li><strong>&pound;70</strong> would pay for a night at the <i>Blue Hill Beach Resort</i> on Koh Phangan</li>
+                        <li><strong>&pound;100</strong> would pay for our <i>internal flights</i> to the islands</li>
                     </ul></p>
 
                     <p>If you are feeling particularly generous and wish to contribute more, we would very

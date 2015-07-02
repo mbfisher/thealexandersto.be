@@ -10,10 +10,12 @@ class RSVP extends React.Component {
         const guests = this.props.invitation.guests;
 
         const checkboxes = _.map(guests, (guest, i) => {
+            const isAttending = rsvp.indexOf(guest) > -1;
+
             return (
                 <li key={'rsvp-'+i}>
                     <label>
-                        <input ref="rsvp" type="checkbox" checked={_.find(rsvp, guest)} onChange={this.onChange.bind(this, guest)}/>
+                        <input ref="rsvp" type="checkbox" checked={isAttending} onChange={this.onChange.bind(this, guest)}/>
                         <h5 className="label-body">{guest}</h5>
                     </label>
                 </li>
