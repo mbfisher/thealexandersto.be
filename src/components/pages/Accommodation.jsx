@@ -11,7 +11,7 @@ class Accommodation extends React.Component {
     }
 
     render() {
-        const accommodation = this.props.invitation.accommodation;
+        const accommodation = this.props.invitation.accommodation || {};
 
         return (
             <div className="page page--accommodation">

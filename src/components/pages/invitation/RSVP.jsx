@@ -6,7 +6,7 @@ import updateInvitation from '../../../actions/updateInvitation';
 
 class RSVP extends React.Component {
     render() {
-        const rsvp = this.props.invitation.rsvp;
+        const rsvp = this.props.invitation.rsvp || [];
         const guests = this.props.invitation.guests;
 
         const checkboxes = _.map(guests, (guest, i) => {

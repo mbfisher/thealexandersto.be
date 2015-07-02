@@ -41,9 +41,9 @@ class Login extends React.Component {
                         <div className="intro__title twelve columns text-blue"><h1>Alexander Wedding</h1></div>
                     </div>
                     <div className="row">
-                        <div className="intro__date four columns text-red"><h2>21</h2></div>
-                        <div className="intro__date four columns text-green"><h2>09</h2></div>
-                        <div className="intro__date four columns text-yellow"><h2>15</h2></div>
+                        <div className="intro__date four columns"><h2 className="text-red">21</h2></div>
+                        <div className="intro__date four columns"><h2 className="text-green">09</h2></div>
+                        <div className="intro__date four columns"><h2 className="text-yellow">15</h2></div>
                     </div>
                 </div>
 

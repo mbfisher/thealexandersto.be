@@ -20,7 +20,12 @@ export default function loginAction(context, payload, done) {
 
         debug('Login success for '+username);
         context.cookies.set('u', username);
-        context.dispatch('RECEIVE_INVITATION', invitation);
+        try {
+            context.dispatch('RECEIVE_INVITATION', invitation);
+        } catch (e) {
+            return context.executeAction(errorAction, {message: e.message, isLogin: true}, done);
+        }
+
         done();
     })
 }
