@@ -30,7 +30,7 @@ class RSVP extends React.Component {
                 <form>
                     <div className="row">
                         <div className="twelve columns">
-                            <ul>{checkboxes}</ul>
+                            <ul style={{textAlign: 'center'}}>{checkboxes}</ul>
                         </div>
                     </div>
                 </form>
