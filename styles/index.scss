@@ -127,12 +127,12 @@ input[type=text] {
   top: 0;
   left: 0;
   right: 0;
-  background: #f9f9f9;
-  z-index: 99;
+
 }
 
 nav {
-
+  background: #f9f9f9;
+  z-index: 99;
 }
 
 nav a {
@@ -192,6 +192,10 @@ nav a {
   }
 }
 
+.headroom-wrapper {
+  height: 86px !important;
+}
+
 @media (max-width: 550px) {
   .nav--groups {
     display: none;
@@ -199,8 +203,8 @@ nav a {
   .nav--stack {
     display: block;
   }
-  .nav-headroom {
-    height: 39px;
+  .headroom-wrapper {
+    height: 39px !important;
   }
 }
 
