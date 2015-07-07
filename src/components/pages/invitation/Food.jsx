@@ -28,17 +28,17 @@ class Food extends React.Component {
                 </div>
                 <div className="twelve columns">
                     <p>We have an awesome assortment of food for you to enjoy throughout the day, but appreciate some
-                        of you may have dietary restrictions. Please let us know so we can accommodate you as best as
-                        possible.</p>
+                        of you may have dietary restrictions e.g. <strong>food allergies</strong>, <strong>vegans</strong> and <strong>vegetarians</strong> (don't
+                        tell us if you don't like tomatoes!) Please let us know so we can accommodate you as best as possible.</p>
                 </div>
                 <form ref="form">
                     <div className="row">{inputs}</div>
                     <div className="row">
                         <div className="twelve columns">
-                            <h3 style={{textAlign: 'center'}}>Breakfast</h3>
+                            <h3 className="text--center">Breakfast</h3>
                         </div>
                         <div className="twelve columns">
-                            <p>We have booked a private room for breakfast at Staverton the following morning; would you
+                            <p className="text--center">We have booked a private room for breakfast at Staverton the following morning; would you
                                 like to join us?</p>
                         </div>
                     </div>

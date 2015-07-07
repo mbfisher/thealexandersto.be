@@ -67,6 +67,10 @@ p, li {
   font-size: 16px;
 }
 
+p {
+  text-align: justify;
+}
+
 a {
   color: $red;
   &:hover {
@@ -81,12 +85,6 @@ ul {
 
 form {
   margin-bottom: 0;
-}
-
-@media (max-width: 550px) {
-  p, ul {
-    text-align: justify;
-  }
 }
 
 label {
@@ -112,13 +110,29 @@ input[type=text] {
   color: $red;
 }
 
+.text-hover--green:hover {
+  color: $green;
+}
+
 .text--center {
   text-align: center;
 }
 
-nav {
+.nav-headroom {
+  height: 87px;
+}
+
+.nav-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background: #f9f9f9;
   z-index: 99;
+}
+
+nav {
+
 }
 
 nav a {
@@ -182,9 +196,11 @@ nav a {
   .nav--groups {
     display: none;
   }
-
   .nav--stack {
     display: block;
+  }
+  .nav-headroom {
+    height: 39px;
   }
 }
 
@@ -220,7 +236,7 @@ nav a:hover {
   font-size: 42px;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
-  margin: 48px 0;
+  margin: 24px 0;
 }
 
 input.error {
@@ -257,7 +273,7 @@ input.error:focus {
   color: $gray;
 }
 
-.page--venue .page__title {
+.page--photos .page__title {
   background: $blue;
 }
 
@@ -273,6 +289,10 @@ input.error:focus {
   background: $red;
 }
 
+.dodford-layout {
+  margin-bottom: 24px;
+}
+
 .dodford-layout img {
   width: 100%;
 }
@@ -281,10 +301,6 @@ input.error:focus {
   .dodford-layout {
     display: none;
   }
-}
-
-.venue__map {
-  text-align: center;
 }
 
 .invitation__rsvp ul {

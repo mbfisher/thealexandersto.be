@@ -27,6 +27,11 @@ export default class PS extends React.Component {
                                     all cars must be collected by <strong>11am</strong> on the following morning.</p>
                                 <hr/>
                             </div>
+                            <div className="venue__map">
+                                <h3>Map</h3>
+                                <iframe width="100%" height="450" frameBorder="0" style={{border: 0}} src="https://www.google.com/maps/embed/v1/place?q=Dodford%20Manor%20Exclusive%20Use%20Country%20House%20Barn%20Wedding%20Venue%2C%20Main%20Street%2C%20Northampton%2C%20United%20Kingdom&key=AIzaSyDB5RIsuYqfRLadiXnhvkbHA_RUbKtyIN4"></iframe>
+                                <hr/>
+                            </div>
                         </div>
                     </div>
                 </div>

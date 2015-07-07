@@ -6,6 +6,7 @@ import updateInvitation from '../../actions/updateInvitation';
 import RSVP from './invitation/RSVP';
 import Arrival from './invitation/Arrival';
 import Food from './invitation/Food';
+import Venue from './invitation/Venue';
 
 class MyInvitation extends React.Component {
     constructor(props) {
@@ -23,8 +24,13 @@ class MyInvitation extends React.Component {
                         <span className="text-red"><strong>You in or what?</strong></span><br/>
                     </div>
                 </div>
-                <Arrival invitation={this.props.invitation}/>
+                <hr/>
                 <RSVP invitation={this.props.invitation}/>
+                <hr/>
+                <Arrival invitation={this.props.invitation}/>
+                <hr/>
+                <Venue invitation={this.props.invitation}/>
+                <hr/>
                 <Food invitation={this.props.invitation}/>
             </div>
         );

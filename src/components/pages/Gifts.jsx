@@ -36,7 +36,7 @@ export default class Gifts extends React.Component {
                     </ul></p>
 
                     <p>If you are feeling particularly generous and wish to contribute more, we would very
-                    grateful <strong>&hellip;SOMETHING&hellip;</strong></p>
+                    grateful and all will be used to enjoy our honeymoon!</p>
                 </div></div></div>
             </div>
         );

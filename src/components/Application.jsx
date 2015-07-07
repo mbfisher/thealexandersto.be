@@ -5,7 +5,7 @@ import {provideContext, connectToStores} from 'fluxible/addons';
 import Nav from './Nav'
 import Login from './Login';
 import MyInvitation from './pages/MyInvitation';
-import Venue from './pages/Venue';
+import Photos from './pages/Photos';
 import Accommodation from './pages/Accommodation';
 import Gifts from './pages/Gifts';
 import PS from './pages/PS';
@@ -27,8 +27,8 @@ class Application extends React.Component {
                     <Nav/>
                     <div className="content">
                         <div id="invitation"><MyInvitation invitation={this.props.invitation}/></div>
-                        <div id="venue"><Venue invitation={this.props.invitation}/></div>
                         <div id="accommodation"><Accommodation invitation={this.props.invitation}/></div>
+                        <div id="photos"><Photos invitation={this.props.invitation}/></div>
                         <div id="gifts"><Gifts invitation={this.props.invitation}/></div>
                         <div id="ps"><PS invitation={this.props.invitation}/></div>
                     </div>

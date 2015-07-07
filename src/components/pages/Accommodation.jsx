@@ -60,9 +60,9 @@ class Accommodation extends React.Component {
                         <div className="twelve columns">
                             <p>If you would like to stay at another hotel there are a number of others available to you:</p>
                             <ul>
-                                <li><a href="http://www.premierinn.com/" target="_blank">Premier Inn, Weedon Bec</a> <span>(3m drive)</span></li>
-                                <li><a href="http://www.hinorthamptonwest.co.uk/" target="_blank">Holiday Inn, Northampton West</a> <span>(6m drive)</span>  </li>
-                                <li><a href="http://www.marriott.co.uk/hotels/travel/ormnh-northampton-marriott-hotel/">Courtyard by Marriott Daventry</a> (6m drive)</li>
+                                <li><a href="http://www.premierinn.com/" target="_blank">Premier Inn, Weedon Bec</a> <span>(3min drive)</span></li>
+                                <li><a href="http://www.hinorthamptonwest.co.uk/" target="_blank">Holiday Inn, Northampton West</a> <span>(6min drive)</span>  </li>
+                                <li><a href="http://www.marriott.co.uk/hotels/travel/ormnh-northampton-marriott-hotel/">Courtyard by Marriott Daventry</a> (6min drive)</li>
                             </ul>
                         </div>
                     </div>
