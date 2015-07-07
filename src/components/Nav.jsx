@@ -33,7 +33,7 @@ export default class Navigation extends React.Component {
             <div className="nav__items">
                  <div className="row">
                     <div className="four columns">
-                        <a href="#venue"  onClick={this.hide} className="text-blue--hover text-blue--active">Venue</a>
+                        <a href="#photos"  onClick={this.hide} className="text-blue--hover text-blue--active">Photos</a>
                     </div>
                     <div className="four columns">
                         <a href="#gifts" onClick={this.hide} className="text-yellow--hover text-yellow--active">Gifts</a>
@@ -62,8 +62,8 @@ export default class Navigation extends React.Component {
             <Headroom>
                 <nav>
                     <div className="nav--full">
-                        <a href="#venue" className="text-blue--hover text-blue--active">Venue</a>
                         <a href="#accommodation" className="text-green--hover text-green--active">Accommodation</a>
+                        <a href="#photos" className="text-blue--hover text-blue--active">Photos</a>
                         <a href="#invitation">My Invitation</a>
                         <a href="#gifts" className="text-yellow--hover text-yellow--active">Gifts</a>
                         <a href="#ps" className="text-red--hover text-red--active">P.S.</a>
