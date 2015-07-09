@@ -30,6 +30,9 @@ class RSVP extends React.Component {
                 <form>
                     <div className="row">
                         <div className="twelve columns">
+                            <p className="text--center">Tick the boxes to tell us who's coming.</p>
+                        </div>
+                        <div className="twelve columns">
                             <ul>{checkboxes}</ul>
                         </div>
                     </div>

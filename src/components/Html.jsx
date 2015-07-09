@@ -16,7 +16,6 @@ export default class Html extends React.Component {
                 <div id="app" dangerouslySetInnerHTML={{__html: this.props.markup}}></div>
             </body>
             <script dangerouslySetInnerHTML={{__html: 'window.App=' + this.props.state + ';'}}></script>
-            <script src="https://cdn.firebase.com/js/client/2.2.6/firebase.js"></script>
             <script src="/bundle.js"></script>
             </html>
         );

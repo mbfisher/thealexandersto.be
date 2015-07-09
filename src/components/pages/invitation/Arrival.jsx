@@ -6,10 +6,12 @@ import updateInvitation from '../../../actions/updateInvitation';
 
 export default class Arrival extends React.Component {
     render() {
-        let dayArrival;
+        let arrival;
 
         if (this.props.invitation.isDay) {
-            dayArrival = <h4 className="text--center"><strong>12.30pm</strong> for a <strong>1.30pm</strong> ceremony</h4>;
+            arrival = <span><strong>12.30pm</strong> for a <strong>1.30pm</strong> ceremony</span>;
+        } else {
+            arrival = <span><strong>7-7.30pm</strong> for a drink with the Bride and Groom</span>;
         }
 
         return (
@@ -18,8 +20,7 @@ export default class Arrival extends React.Component {
                     <h2>Arrival</h2>
                 </div>
                 <div className="twelve columns invitation__arrival">
-                    {dayArrival}
-                    <h4 className="text--center"><strong>7-7.30pm</strong> for a drink with the Bride and Groom</h4>
+                    <h4 className="text--center">{arrival}</h4>
                 </div>
             </div>
         );

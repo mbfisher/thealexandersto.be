@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway|Poiret+One|Quicksand:400,700|Lobster);
+@import url(http://fonts.googleapis.com/css?family=Raleway|Poiret+One|Quicksand:400,700|Lobster|Schoolbell);
 
 $blue: #a2d7d8;
 $green: #bfe1bf;
@@ -56,6 +56,10 @@ h2 {
       text-decoration: underline;
     }
   }
+}
+
+a {
+  cursor: pointer;
 }
 
 p, li, h3, h4, h5 {
@@ -318,6 +322,13 @@ input.error:focus {
   font-size: 18px;
 }
 
+.poem__author {
+  display: inline-block;
+  font-size: 15px;
+  padding: 15px 0 0 114px;
+  font-family: 'Schoolbell', sans-serif;
+}
+
 .push {
   position: fixed;
   bottom: 25px;
@@ -332,6 +343,23 @@ input.error:focus {
   transition: opacity .25s ease-in-out;
 }
 
+.push__close a {
+  color: #fff;
+  font-size: 18px;
+  line-height: 12px;
+  vertical-align: middle;
+}
+
 .breakfast .breakfast__option {
   text-align: center;
+}
+
+.photos__downloads .columns {
+  text-align: center;
+}
+
+@media (max-width: 550px) {
+  .photos__downloads .columns {
+    padding-top: 18px;
+  }
 }

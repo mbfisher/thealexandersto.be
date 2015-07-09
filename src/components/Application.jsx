@@ -28,8 +28,8 @@ class Application extends React.Component {
                     <div className="content">
                         <div id="invitation"><MyInvitation invitation={this.props.invitation}/></div>
                         <div id="accommodation"><Accommodation invitation={this.props.invitation}/></div>
-                        <div id="photos"><Photos invitation={this.props.invitation}/></div>
                         <div id="gifts"><Gifts invitation={this.props.invitation}/></div>
+                        <div id="photos"><Photos invitation={this.props.invitation}/></div>
                         <div id="ps"><PS invitation={this.props.invitation}/></div>
                     </div>
                     <Push/>

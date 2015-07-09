@@ -13,6 +13,7 @@ class Push extends React.Component {
         };
 
         this.onChange = this.onChange.bind(this);
+        this.close = this.close.bind(this);
     }
 
     componentDidMount() {
@@ -20,6 +21,12 @@ class Push extends React.Component {
     }
     componentWillUnmount() {
         this.context.getStore(PushStore).removeChangeListener(this.onChange);
+    }
+
+    close() {
+        this.setState({
+            visible: false
+        });
     }
 
     onChange() {
@@ -32,13 +39,7 @@ class Push extends React.Component {
         } else if (store.isPushing()) {
             content = 'Saving...';
         } else if (store.hasLastPush()) {
-            content = 'Saved at ' + store.getLastPushTime().format('HH:mm');
-
-            setTimeout(() => {
-                this.setState({
-                    visible: false
-                });
-            }, 2000);
+            content = <div>Saved at {store.getLastPushTime().format('HH:mm')} <span className="push__close"><a onClick={this.close}>&times;</a></span></div>;
         }
 
         this.setState({
@@ -50,7 +51,9 @@ class Push extends React.Component {
 
     render() {
         return (
-            <div className="push" style={{opacity: this.state.visible ? '0.9' : '0'}}>{this.state.content}</div>
+            <div className="push" style={{opacity: this.state.visible ? '0.9' : '0'}}>
+                {this.state.content}
+            </div>
         );
     }
 }
