@@ -25,6 +25,20 @@ class MyInvitation extends React.Component {
                     </div>
                 </div>
                 <hr/>
+                <div className="row invitation__rsvp">
+                    <div className="twelve columns">
+                        <h2>My Invitation</h2>
+                    </div>
+                    <div className="twelve columns">
+                        <p>Welcome to your invitation to our wedding! There's a few things for you to fill in. Everything will
+                        be saved automatically as you go - a notification will appear to let you know
+                        your changes have been saved. Once you've filled everything in you can close the window. Please come back any time
+                        for information and if you need any help get in touch!</p>
+                        <p className="text--center">We can't wait to see you,</p>
+                        <p className="text--center">Sarah &amp; Ross xx</p>
+                    </div>
+                </div>
+                <hr/>
                 <RSVP invitation={this.props.invitation}/>
                 <hr/>
                 <Arrival invitation={this.props.invitation}/>

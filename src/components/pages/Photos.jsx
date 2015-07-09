@@ -14,11 +14,11 @@ export default class Photos extends React.Component {
                                 This is a poem to tell everyone,<br/>
                                 How to share their photos.<br/>
                                 They'll need to use technology,<br/>
-                                Flip flop hammer mementos<br/>
+                                Flip flop hammer mementos.<br/>
                                 <span className="poem__author">Mike Fisher, Age 27</span>
                             </p>
                             <p>We hope you'll take loads of photos on the day, and we'd love to be able to see them all! <a href="https://www.wedpics.com"><strong>Wedpics</strong></a> is
-                                a service that lets you upload your pictures so that the bridge and groom as well as all the other guests at a wedding can see them;
+                                a service that lets you upload your pictures so that the bride and groom as well as all the other guests at a wedding can see them;
                                 think of it like a private Facebook. We'd really like everyone to upload their photos - you
                                 can use a smartphone app or the website.</p>
                             <h4 className="text--center">Our wedding ID is <strong>SARAHROSS2192015</strong></h4>

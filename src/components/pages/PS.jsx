@@ -16,6 +16,7 @@ export default class PS extends React.Component {
                                     to <a href="http://www.1entertainments.djintelligence.com/request/" target="_blank">this website</a> using the
                                     details below. Get it done!</p>
                                 <p><strong>Username:</strong> alexanderwedding<br/><strong>Password:</strong> wedding</p>
+                                <hr/>
                                 <h3>Taxis</h3>
                                 <p>There will be a taxi rank running from Dodford throughout the evening, more so when
                                 the bar closes at 11pm.</p>
