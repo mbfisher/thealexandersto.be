@@ -1,5 +1,9 @@
 'use strict';
 
+if (process.env.NODE_ENV === 'production') {
+    require('newrelic');
+}
+
 import express from 'express';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';

@@ -26,6 +26,7 @@
     "lodash": "^3.9.3",
     "moment": "^2.10.3",
     "mongodb": "^2.0.33",
+    "newrelic": "^1.20.2",
     "node-sass": "^3.2.0",
     "normalize.css": "^3.0.3",
     "raf": "^3.0.0",
