@@ -33,21 +33,21 @@ export default class Navigation extends React.Component {
             <div className="nav__items">
                  <div className="row">
                     <div className="four columns">
+                        <a href="#invitation" onClick={this.hide}>My Invitation</a>
+                    </div>
+                    <div className="four columns">
+                        <a href="#accommodation" onClick={this.hide} className="text-green--hover text-green--active">Accommodation</a>
+                    </div>
+                    <div className="four columns">
                         <a href="#gifts" onClick={this.hide} className="text-yellow--hover text-yellow--active">Gifts</a>
-                    </div>
-                    <div className="four columns">
-                        <a href="#photos"  onClick={this.hide} className="text-blue--hover text-blue--active">Photos</a>
-                    </div>
-                    <div className="four columns">
-                        <a href="#ps" onClick={this.hide} className="text-red--hover text-red--active">P.S.</a>
                     </div>
                 </div>
                 <div className="row">
                     <div className="six columns">
-                        <a href="#accommodation" onClick={this.hide} className="text-green--hover text-green--active">Accommodation</a>
+                        <a href="#photos"  onClick={this.hide} className="text-blue--hover text-blue--active">Photos</a>
                     </div>
                     <div className="six columns">
-                        <a href="#invitation" onClick={this.hide}>My Invitation</a>
+                        <a href="#ps" onClick={this.hide} className="text-red--hover text-red--active">P.S.</a>
                     </div>
                 </div>
             </div>
