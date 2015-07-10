@@ -56,7 +56,7 @@ server.use((req, res, next) => {
             )
         );
         let html = React.renderToStaticMarkup(
-            React.createElement(HtmlComponent, {markup: markup, state: state})
+            React.createElement(HtmlComponent, {markup: markup, state: state, env: process.env.NODE_ENV})
         );
 
         res.send(html);
