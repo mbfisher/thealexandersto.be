@@ -6,7 +6,7 @@ const newrelic = 'window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function
 
 export default class Html extends React.Component {
     render() {
-        const newrelicScript = this.props.env === 'production' ? <script type="text/javascript" dangerouslySetInnerHtml={{__html: newrelic}}></script> : null;
+        const newrelicScript = this.props.env === 'production' ? <script dangerouslySetInnerHTML={{__html: newrelic}}></script> : null;
 
         return (
             <html>
