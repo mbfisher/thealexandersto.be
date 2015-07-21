@@ -6,6 +6,7 @@ import InvitationService from '../src/services/Invitations';
 import async from 'async';
 import _ from 'lodash';
 import readline from 'readline';
+import diff from 'deep-diff';
 
 const service = InvitationService.create();
 
@@ -20,8 +21,23 @@ parse(fs.readFileSync(process.argv[2]).toString(), {columns: true}, (err, invita
     let operation = replace ? 'each' : 'eachSeries';
 
     async[operation](invitations, (row, done) => {
-        row.guests = row.guests.split(/,\s/);
+        row.guests = _.map(row.guests.split(/,\s/), (guest) => {
+            return guest.trim();
+        });
+        row.rsvp = row.rsvp ? _.map(row.rsvp.split(/,\s/), (guest) => {
+            return guest.trim();
+        }) : [];
+        row.food = parseFood(row.food);
         row.isDay = row.isDay === 'Y';
+        row.accommodation = {
+            single: row.single,
+            double: row.double,
+            family: row.family
+        };
+        row.breakfast = row.breakfast === 'Y';
+        delete row.single;
+        delete row.double;
+        delete row.family;
 
         service.findOne({username: row.username}, (err, result) => {
             if (err) {
@@ -54,11 +70,14 @@ parse(fs.readFileSync(process.argv[2]).toString(), {columns: true}, (err, invita
                 });
 
                 const next = row;
+                const _diff = diff(current, next);
 
-                if (!_.isEqual(current, next)) {
-                    const merged = _.merge(current, next);
+                if (_diff) {
+                    const merged = _.merge({}, current, next);
 
                     console.log('Existing invitation found:');
+                    console.log('--- DIFF ---');
+                    console.log(_diff);
                     console.log('--- CURRENT ---');
                     console.log(current);
                     console.log('--- NEXT ---')
@@ -89,3 +108,21 @@ parse(fs.readFileSync(process.argv[2]).toString(), {columns: true}, (err, invita
         rl.close();
     });
 });
+
+function parseFood(string) {
+    const result = {};
+
+    const parts = string.split(', ');
+    _.each(string.split(', '), (part, i) => {
+        if (parts[i+1] && !parts[i+1].match(/^[A-z]+\s*:/)) {
+            part += ', ' + parts[i+1];
+            delete parts[i+1];
+        }
+        const match = part.match(/^([A-z]+)\s*: (.+)$/);
+        if (match) {
+            result[match[1].trim()] = match[2];
+        }
+    });
+
+    return result;
+}

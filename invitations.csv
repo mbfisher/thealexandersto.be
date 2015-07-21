@@ -1,85 +1,85 @@
-username,guests,email,isDay
-mamafish,Sue,sue.crosson@btopenworld.com,Y
-fishersupnorth,"Mike, Sam ",mike@mbfisher.com,Y
-thegreeves,"Kendal, Dan",kendalgraney@hotmail.com,Y
-thesmiths,"Aimee, Rob ",aimeesmith8585@gmail.com,Y
-anne-marie,Anne-Marie ,amhitchin@googlemail.com,Y
-thegreens,"Rachael, Jim ",rachael.l.green28@gmail.com,Y
-drdon,Olivia,liv_don@hotmail.com,Y
-theainleys,"Sue, Simon ",simon@simonvenn.co.uk,Y
-thethompsons,"Ben, Danielle ",ben7246@hotmail.com,Y
-greenwood,Ben ,bpgreenwood@hotmail.com,Y
-thegreenwoods,"Julie, Phil ",julie.greenwood@andel.co.uk,Y
-thefishers,"David, Jayne ",jaynesfisher@btinternet.com,Y
-bisbeystobe,"Laura, Andy ",lolly286@hotmail.com,Y
-helen,Helen ,heljed@hotmail.com,Y
-thevarnishs,"Jenny, Paul",pavarnish75@hotmail.com,Y
-thehowards,"Gary, Trisha ",trish.howard96@gmail.com,Y
-thealexanders,"Pete, Julie ",peter.alexander4@ntlworld.com,Y
-thewilliamsfamily,"Ross, Kathryn, Ollie, Ashley ",thecoursemanager@hotmail.com,Y
-thehornes,"Sarah, Jim",jameshorne1963@googlemail.com,Y
-thegradys,"Samantha, Jay ",scgrady28@gmail.com,Y
-thenewalls,"Louise, Gerry ",newall252@btinternet.com,Y
-gem&john,"Gemma, Jon ",gemmanewalldot82@gmail.com,Y
-thebrownhills,"Georgie, Tom ",Newallg@hotmail.com,Y
-thedippers,"Holly, Stuart ",Hollynewall@hotmail.com,Y
-themaddoxs,"Chris, Bekki ",chris@particip8.org.uk,Y
-thewoodwards,"Scott, Laura ",swoodward1978@gmail.com,Y
-tom&gillie,"Tom, Gillie ",tomanderson8@hotmail.com,Y
-daz&claire,"Dazzle, Claire ",darren.g@hotmail.co.uk,Y
-dickie&veebs,"Dickie, Veebs ",richard.tatlow@telenor.com,Y
-woodwardsjnr,"Bert, Jodie ",brettwoodward@hotmail.co.uk,Y
-thenicksons,"Nico, Rachel ",nicsonian@hotmail.co.uk,Y
-lloyd&chez,"Lloyd, Chez ",lmcdiarmid31@googlemail.com,Y
-bishy&shelly,"Bishy, Shelly ",simon.stafford@kscs.co.uk,Y
-lou,Louise,,Y
-thematthews,"Laura, Richard",,Y
-theeardleys,"Rob, Elaine",,Y
-thebartons,"James, Sue",,Y
-rose,"Anna, Steve",,
-back,"Rob, Katy",,
-davis,"Ian, Anne",,
-norburn,"Adam, Chris",,
-tyrrell,Deborah,,
-hillman,Karen,,
-allen,Marian,,
-foran,Charlie,,
-garrigan,Julia,,
-knighton,Verity,,
-freer,"Nick, Sandy",,
-rimen,"Catrina, Paul",,
-dixon-goode,"Rachel, Craig",,
-burnsbrown,"Margaret, Neil",,
-graney,"Dee, Boyd",,
-hitchin,"Tony, Chris",,
-waddy,"Richard, Margaret",,
-maddoxsnr,"Mike, Liz",,
-woodward,"Steve, Anne",,
-carnage,"Paul, +1",,
-brookes,"Kev, +1",,
-cowley,"John, Steph",,
-carter,Amy,,
-bryden,"Chris, Katie",,
-rippon,"Guy, Jerren",,
-law,Adam,,
-scott,"Steve, Kate",,
-ganley,"John, Jackie",,
-cluellow,"Phil, Stacey",,
-dicks,Mike,,
-altridge,"Jo, Paul",,
-douglas,"Dougie, +1",,
-reynolds,"Ren, Victoria",,
-owen,"Scottie, Harriett",,
-blesset,"Ruth, Ben",,
-craig,"Kay, Adam",,
-rachelf,Rachel,,
-wood,"Trisha, +1",,
-bahey,"Raj, Mel",,
-chapman,"Vicky, Ollie",,
-beresford,"Lizzie, James",,
-stanczyszyn,"Matt, K",,
-beirne,"Michael, Amy",,
-needham,Martin,,
-hollya,Holly,,
-toma,Tom,,
-rudd,"Matt, Gemma",,
+username,guests,email,isDay,rsvp,food,breakfast,single,double,family
+mamafish,Sue,sue.crosson@btopenworld.com,Y,Sue,Sue: gluten and dairy free please (I don't like lamb's liver),Y,0,1,0
+fishersupnorth,"Mike, Sam ",mike@mbfisher.com,Y,"Sam , Mike",,Y,,,
+thegreeves,"Kendal, Dan",kendalgraney@hotmail.com,Y,"Kendal, Dan",,Y,0,1,0
+thesmiths,"Aimee, Rob ",aimeesmith8585@gmail.com,Y,"Aimee, Rob ",,Y,0,1,0
+anne-marie,Anne-Marie ,amhitchin@googlemail.com,Y,Anne-Marie ,,Y,1,0,0
+thegreens,"Rachael, Jim ",rachael.l.green28@gmail.com,Y,"Rachael, Jim ",,Y,0,1,0
+drdon,Olivia,liv_don@hotmail.com,Y,Olivia,Olivia: Not fussy! No allergies!,Y,0,1,0
+theainleys,"Sue, Simon ",simon@simonvenn.co.uk,Y,"Sue, Simon ","Sue: Vegetarian, Simon : Vegetarian ",,,,
+thethompsons,"Ben, Danielle ",ben7246@hotmail.com,Y,,,,,,
+greenwood,Ben ,bpgreenwood@hotmail.com,Y,,,,,,
+thegreenwoods,"Julie, Phil ",julie.greenwood@andel.co.uk,Y,"Julie, Phil ","Julie: I eat anything!! , Phil : Vegetarian but does eat fish (and meat for a tasting) go figure !!",,,,
+thefishers,"David, Jayne ",jaynesfisher@btinternet.com,Y,,,,,,
+bisbeystobe,"Laura, Andy ",lolly286@hotmail.com,Y,,,,,,
+helen,Helen ,heljed@hotmail.com,Y,Helen ,,N,,,
+thevarnishs,"Jenny, Paul",pavarnish75@hotmail.com,Y,"Jenny, Paul",Jenny: No nuts or egg,N,,,
+thehowards,"Gary, Trisha ",trish.howard96@gmail.com,Y,"Gary, Trisha ",,Y,0,1,0
+thealexanders,"Pete, Julie ",peter.alexander4@ntlworld.com,Y,"Pete, Julie ","Pete: free meal, Julie : free one drink",Y,0,1,0
+thewilliamsfamily,"Ross, Kathryn, Ollie, Ashley ",thecoursemanager@hotmail.com,Y,,,,,,
+thehornes,"Sarah, Jim",jameshorne1963@googlemail.com,Y,"Sarah, Jim",,N,,,
+thegradys,"Samantha, Jay ",scgrady28@gmail.com,Y,"Samantha, Jay ","Samantha: Vegan, Jay : Vegan",Y,,,
+thenewalls,"Louise, Gerry ",newall252@btinternet.com,Y,,,,,,
+gem&john,"Gemma, Jon ",gemmanewalldot82@gmail.com,Y,,,,,,
+thebrownhills,"Georgie, Tom ",Newallg@hotmail.com,Y,Georgie,Georgie: No fish or seafood ,N,,,
+thedippers,"Holly, Stuart ",Hollynewall@hotmail.com,Y,,,,,,
+themaddoxs,"Chris, Bekki ",chris@particip8.org.uk,Y,"Chris, Bekki ",,,,,
+thewoodwards,"Scott, Laura ",swoodward1978@gmail.com,Y,"Scott, Laura ",,N,0,1,0
+tom&gillie,"Tom, Gillie ",tomanderson8@hotmail.com,Y,"Tom, Gillie ",Gillie : Vegetarian,Y,0,1,0
+daz&claire,"Dazzle, Claire ",darren.g@hotmail.co.uk,Y,"Dazzle, Claire ",,Y,0,1,0
+dickie&veebs,"Dickie, Veebs ",richard.tatlow@telenor.com,Y,,,,,,
+woodwardsjnr,"Bert, Jodie ",brettwoodward@hotmail.co.uk,Y,"Bert, Jodie ",,Y,0,1,0
+thenicksons,"Nico, Rachel ",nicsonian@hotmail.co.uk,Y,"Nico, Rachel ","Nico: No fish, unless it's fish fingers or from the chippy, Rachel : No seafood. May well done. All that pregnant avoidance rubbish. :)",Y,0,1,0
+lloyd&chez,"Lloyd, Chez ",lmcdiarmid31@googlemail.com,Y,"Lloyd, Chez ","Chez : Gluten, dairy",Y,0,1,0
+bishy&shelly,"Bishy, Shelly ",simon.stafford@kscs.co.uk,Y,"Bishy, Shelly ","Bishy: No seafood, Shelly : No seafood / lamb",N,0,1,0
+lou,Louise,,Y,Louise,,N,,,
+thematthews,"Laura, Richard",,Y,,,,,,
+theeardleys,"Rob, Elaine",,Y,"Elaine, Rob","Elaine: No fish.  Or lamb, Rob: Eats anything",,,,
+thebartons,"James, Sue",,Y,,,,,,
+rose,"Anna, Steve",,N,,,,,,
+back,"Rob, Katy",,N,,,,,,
+davis,"Ian, Anne",,N,,,,,,
+norburn,"Adam, Chris",,N,,,,,,
+tyrrell,Deborah,,N,,,,,,
+hillman,Karen,,N,,,,,,
+allen,Marian,,N,,,,,,
+foran,Charlie,,N,,,,,,
+garrigan,Julia,,N,,,,,,
+knighton,Verity,,N,,,,,,
+freer,"Nick, Sandy",,N,,,,,,
+rimen,"Catrina, Paul",,N,,,,,,
+dixon-goode,"Rachel, Craig",,N,,,,,,
+burnsbrown,"Margaret, Neil",,N,,,,,,
+graney,"Dee, Boyd",,N,,,,,,
+hitchin,"Tony, Chris",,N,,,,,,
+waddy,"Richard, Margaret",,N,,,,,,
+maddoxsnr,"Mike, Liz",,N,,,,,,
+woodward,"Steve, Anne",,N,,,,,,
+carnage,"Paul, +1",,N,,,,,,
+brookes,"Kev, +1",,N,,,,,,
+cowley,"John, Steph",,N,,,,,,
+carter,Amy,,N,,,,,,
+bryden,"Chris, Katie",,N,,,,,,
+rippon,"Guy, Jerren",,N,,,,,,
+law,Adam,,N,,,,,,
+scott,"Steve, Kate",,N,,,,,,
+ganley,"John, Jackie",,N,,,,,,
+cluellow,"Phil, Stacey",,N,,,,,,
+dicks,Mike,,N,,,,,,
+altridge,"Jo, Paul",,N,,,,,,
+douglas,"Dougie, +1",,N,,,,,,
+reynolds,"Ren, Victoria",,N,,,,,,
+owen,"Scottie, Harriett",,N,,,,,,
+blesset,"Ruth, Ben",,N,,,,,,
+craig,"Kay, Adam",,N,,,,,,
+rachelf,Rachel,,N,,,,,,
+wood,"Trisha, +1",,N,,,,,,
+bahey,"Raj, Mel",,N,,,,,,
+chapman,"Vicky, Ollie",,N,,,,,,
+beresford,"Lizzie, James",,N,,,,,,
+stanczyszyn,"Matt, K",,N,,,,,,
+beirne,"Michael, Amy",,N,,,,,,
+needham,Martin,,N,,,,,,
+hollya,Holly,,N,,,,,,
+toma,Tom,,N,,,,,,
+rudd,"Matt, Gemma",,N,,,,,,

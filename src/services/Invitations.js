@@ -21,6 +21,18 @@ export default class InvitationService {
         );
     }
 
+    all(done) {
+        let url = this._uri+'/databases/'+this._database+'/collections/'+this._collection;
+        request.get(url).accept('json').query({apiKey: this._apiKey}).end((err, res) => {
+            if (err) {
+                debug(err);
+                return done(err);
+            }
+
+            done(null, res.body);
+        });
+    }
+
     findOne(query, done) {
         let url = this._uri+'/databases/'+this._database+'/collections/'+this._collection;
         request.get(url).accept('json').query({apiKey: this._apiKey, q: JSON.stringify(query), fo: true}).end((err, res) => {
