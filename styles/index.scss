@@ -364,3 +364,61 @@ input.error:focus {
     padding-top: 18px;
   }
 }
+
+.accommodation__hotel {
+  text-align: center;
+}
+.accommodation__hotel a {
+  display: inline-block;
+}
+
+.accommodation__hotel p {
+  font-style: italic;
+  text-align: center;
+}
+
+.accommodation__hotels__premier a {
+  background-size: 180px 135px;
+  width: 180px;
+  height: 135px;
+}
+.accommodation__hotels__holiday a {
+  background-size: 170px 136px;
+  width: 170px;
+  height: 136px;
+}
+.accommodation__hotels__marriott a {
+  background-size: 275px 136px;
+  background-position-x: -69px;
+  width: 133px;
+  height: 136px;
+}
+
+@media (max-width: 900px) {
+  .accommodation__hotels__premier a {
+    background-size: 130px 94px;
+    width: 130px;
+    height: 94px;
+  }
+  .accommodation__hotels__holiday a {
+    background-size: 142px 100px;
+    width: 142px;
+    height: 100px;
+  }
+  .accommodation__hotels__marriott a {
+    background-size: 236px 120px;
+    background-position-y: -13px;
+    width: 103px;
+    height: 96px;
+  }
+}
+
+@media (max-width: 650px) {
+  .accommodation__hotels {
+    .column, .columns {
+      width: 100%;
+      float: left;
+      box-sizing: border-box;
+    }
+  }
+}
