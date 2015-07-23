@@ -12,7 +12,46 @@ class Accommodation extends React.Component {
 
     render() {
         const accommodation = this.props.invitation.accommodation || {};
-        let selectRooms, others = 'There are number of hotels nearby available for you to stay in';
+        let selectRooms, boxes;
+        const boxCols = this.props.invitation.isDay ? 'four' : 'six';
+        let others = <span>There are number of hotels nearby available for you to stay in; we're staying at <strong>Staverton Park</strong>!</span>;
+
+        const stavertonBox = (
+            <div className={boxCols + " columns accommodation__hotel accommodation__hotels__staverton"}>
+                <h5><strong>Staverton Park</strong></h5>
+                <h6>Daventry</h6>
+                <a href="http://www.deverevenues.co.uk/en/venues/staverton-park?gclid=CPLr65DD0MUCFakKwwod8roAzQ" target="_blank" style={{backgroundImage: 'url(http://www.deverevenues.co.uk/i/devere/logo.jpg)'}}></a>
+                <p>7 minutes drive</p>
+                <hr/>
+            </div>
+        );
+        const premierBox = (
+            <div className={boxCols + " columns accommodation__hotel accommodation__hotels__premier"}>
+                <h5>Premier Inn</h5>
+                <h6>Weedon Bec</h6>
+                <a href="http://www.premierinn.com/" target="_blank" style={{backgroundImage: 'url(https://upload.wikimedia.org/wikipedia/en/4/4f/Premier_Inn_logo.jpg)'}}></a>
+                <p>3 minutes drive</p>
+                <hr/>
+            </div>
+        );
+        const holidayBox = (
+            <div className={boxCols + " columns accommodation__hotel accommodation__hotels__holiday"}>
+                <h5>Holiday Inn</h5>
+                <h6>Northampton West</h6>
+                <a href="http://www.hinorthamptonwest.co.uk/" target="_blank" style={{backgroundImage: 'url(https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Holiday_Inn_Logo.svg/1024px-Holiday_Inn_Logo.svg.png)'}}></a>
+                <p>6 minutes drive</p>
+                <hr/>
+            </div>
+        );
+        const marriottBox = (
+            <div className={boxCols + " columns accommodation__hotel accommodation__hotels__marriott"}>
+                <h5>Marriott</h5>
+                <h6>Daventry</h6>
+                <a href="http://www.marriott.co.uk/hotels/travel/ormnh-northampton-marriott-hotel/" target="_blank" style={{backgroundImage: 'url(http://cache.marriott.com/propertyimages/brandgeneric/mc/mc_logo_L.png)'}}></a>
+                <p>6 minutes drive</p>
+                <hr/>
+            </div>
+        );
 
         if (this.props.invitation.isDay) {
             others = 'If you would like to stay at another hotel there are a number of others available to you';
@@ -59,6 +98,29 @@ class Accommodation extends React.Component {
                     </form>
                 </div>
             );
+
+            boxes = (
+                <div>
+                    <div className="row accommodation__hotels">
+                        {premierBox}
+                        {holidayBox}
+                        {marriottBox}
+                    </div>
+                </div>
+            );
+        } else {
+            boxes = (
+                <div>
+                    <div className="row accommodation__hotels">
+                        {stavertonBox}
+                        {premierBox}
+                    </div>
+                    <div className="row accommodation__hotels">
+                        {holidayBox}
+                        {marriottBox}
+                    </div>
+                </div>
+            );
         }
 
         return (
@@ -71,26 +133,7 @@ class Accommodation extends React.Component {
                             <p className="text--center">{others}:</p>
                         </div>
                     </div>
-                    <div className="row accommodation__hotels">
-                        <div className="four columns accommodation__hotel accommodation__hotels__premier">
-                            <h5>Premier Inn</h5>
-                            <h6>Weedon Bec</h6>
-                            <a href="http://www.premierinn.com/" target="_blank" style={{backgroundImage: 'url(https://upload.wikimedia.org/wikipedia/en/4/4f/Premier_Inn_logo.jpg)'}}></a>
-                            <p>3 minutes drive</p>
-                        </div>
-                        <div className="four columns accommodation__hotel accommodation__hotels__holiday">
-                            <h5>Holiday Inn</h5>
-                            <h6>Northampton West</h6>
-                            <a href="http://www.hinorthamptonwest.co.uk/" target="_blank" style={{backgroundImage: 'url(https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Holiday_Inn_Logo.svg/1024px-Holiday_Inn_Logo.svg.png)'}}></a>
-                            <p>6 minutes drive</p>
-                        </div>
-                        <div className="four columns accommodation__hotel accommodation__hotels__marriott">
-                            <h5>Marriott</h5>
-                            <h6>Daventry</h6>
-                            <a href="http://www.marriott.co.uk/hotels/travel/ormnh-northampton-marriott-hotel/" target="_blank" style={{backgroundImage: 'url(http://cache.marriott.com/propertyimages/brandgeneric/mc/mc_logo_L.png)'}}></a>
-                            <p>6 minutes drive</p>
-                        </div>
-                    </div>
+                    {boxes}
                 </div>
             </div>
         );
