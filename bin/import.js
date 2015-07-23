@@ -35,6 +35,7 @@ parse(fs.readFileSync(process.argv[2]).toString(), {columns: true}, (err, invita
             family: row.family
         };
         row.breakfast = row.breakfast === 'Y';
+        row.username = row.username.toLowerCase();
         delete row.single;
         delete row.double;
         delete row.family;
