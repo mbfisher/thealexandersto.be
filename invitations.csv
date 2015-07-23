@@ -1,13 +1,13 @@
 username,guests,email,isDay,rsvp,food,breakfast,single,double,family
 mamafish,Sue,sue.crosson@btopenworld.com,Y,Sue,Sue: gluten and dairy free please (I don't like lamb's liver),Y,0,1,0
-fishersupnorth,"Mike, Sam ",mike@mbfisher.com,Y,"Sam , Mike",,Y,,,
+fishersupnorth,"Mike, Sam ",mike@mbfisher.com,Y,"Sam , Mike",,Y,0,1,0
 thegreeves,"Kendal, Dan",kendalgraney@hotmail.com,Y,"Kendal, Dan",,Y,0,1,0
 thesmiths,"Aimee, Rob ",aimeesmith8585@gmail.com,Y,"Aimee, Rob ",,Y,0,1,0
 anne-marie,Anne-Marie ,amhitchin@googlemail.com,Y,Anne-Marie ,,Y,1,0,0
 thegreens,"Rachael, Jim ",rachael.l.green28@gmail.com,Y,"Rachael, Jim ",,Y,0,1,0
 drdon,Olivia,liv_don@hotmail.com,Y,Olivia,Olivia: Not fussy! No allergies!,Y,0,1,0
 theainleys,"Sue, Simon ",simon@simonvenn.co.uk,Y,"Sue, Simon ","Sue: Vegetarian, Simon : Vegetarian ",,,,
-thethompsons,"Ben, Danielle ",ben7246@hotmail.com,Y,,,,,,
+thethompsons,"Ben, Danielle ",ben7246@hotmail.com,Y,"Ben, Danielle",,,0,1,0
 greenwood,Ben ,bpgreenwood@hotmail.com,Y,,,,,,
 thegreenwoods,"Julie, Phil ",julie.greenwood@andel.co.uk,Y,"Julie, Phil ","Julie: I eat anything!! , Phil : Vegetarian but does eat fish (and meat for a tasting) go figure !!",,,,
 thefishers,"David, Jayne ",jaynesfisher@btinternet.com,Y,,,,,,
