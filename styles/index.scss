@@ -246,6 +246,13 @@ nav a:hover {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   margin: 24px 0;
+
+  .date {
+      display: inline-block;
+      @include font-cursive();
+      padding: 36px 0 24px 0;
+      color: #ccc;
+  }
 }
 
 input.error {

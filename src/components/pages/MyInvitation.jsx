@@ -22,6 +22,7 @@ class MyInvitation extends React.Component {
                         <span className="text-green">Handsome Groom</span><br/>
                         <span className="text-yellow">Booze, food &amp; bad dance moves</span><br/>
                         <span className="text-red"><strong>You in or what?</strong></span><br/>
+                        <span className="date">Monday 21st September 2015</span>
                     </div>
                 </div>
                 <hr/>
